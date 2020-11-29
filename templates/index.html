@@ -1,0 +1,105 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<body>-->
+    <!--<div class="container">-->
+
+      <!--<form class="form-signin" method="POST" action="/index">-->
+        <!--<h2 >Please Fill</h2>-->
+
+        <!--{{ form.hidden_tag() }}-->
+                    <!--<br>-->
+        <!--{{ form.name }}-->
+          <!--<br>-->
+        <!--{{ form.phone_number }}-->
+          <!--<br>-->
+        <!--{{ form.loan_amount}}-->
+          <!--<br>-->
+        <!--{{ form.amount_due}}-->
+          <!--<br>-->
+        <!--{{ form.interest_rate}}-->
+          <!--<br>-->
+        <!--{{ form.due_date}}-->
+          <!--<br>-->
+        <!--{{ form.submit }}-->
+          <!--<br>-->
+      <!--</form>-->
+
+    <!--</div> &lt;!&ndash; /container &ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+          <a href="#" class="brand-logo">HyperVerge</a>
+        </div>
+      </nav>
+    <br>
+
+    <div class="container ">
+        <div class="row">
+            <form class="col s12 " method="POST" action="/index">
+                <div class="container ">
+                  {{ form.hidden_tag() }}
+                    <div class="row">
+                        <div class="input-field col s6 offset-s3">
+                          <label >Name</label>
+                          {{ form.name }}
+
+                        </div>
+                        <div class="input-field col s6 offset-s3">
+
+                          <label >Phone Number</label>
+                          {{ form.phone_number}}
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6 offset-s3">
+
+                          <label >Loan Amount</label>
+                          {{ form.loan_amount}}
+                        </div>
+                      </div>
+                  <div class="row">
+                        <div class="input-field col s6 offset-s3">
+
+                          <label >Amount Due</label>
+                          {{ form.amount_due}}
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6 offset-s3">
+
+                          <label >Interest Rate</label>
+                          {{ form.interest_rate}}
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6 offset-s3">
+
+                          <label >Due Date</label>
+                          {{ form.due_date}}
+                        </div>
+                      </div>
+                      <div class="row">
+                      <div class="input-field col s6 offset-s3">
+
+                        {{ form.submit }}
+                      </div>
+                      </div>
+                </div>
+            </form>
+          </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
